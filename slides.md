@@ -92,7 +92,7 @@ typescript 5.8.3
 
 ---
 layout: image-right
-image: ./assets/images/rust_crab_wave.jpeg
+image: ./assets/images/rust_crab_wave.webp
 ---
 
 # Rust
@@ -721,7 +721,7 @@ chiffres du 18 juin 2025
 <v-clicks>
 
 <img src="./assets/images/case_studies.webp" style="max-width: 24em; display: inline-block;" />
-<img src="./assets/images/fdu_khadgar_deno.jpeg" style="max-width: 12em; display: inline-block; margin-left: 3em;" />
+<img src="./assets/images/fdu_khadgar_deno.webp" style="max-width: 12em; display: inline-block; margin-left: 3em;" />
 
 </v-clicks>
 
