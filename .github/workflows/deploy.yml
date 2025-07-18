@@ -32,7 +32,17 @@ jobs:
         run: nci
 
       - name: Build
-        run: nr build --base /${{github.event.repository.name}}/
+        run: |
+          nr build --base /${{github.event.repository.name}}/
+          mkdir -p dist/assets/images
+          # image-right slides
+          for img in $(cat slides.md | grep 'image: ./assets/images/' | cut -d'/' -f 4); do
+            cp assets/images/$img dist/assets/images/
+          done
+          # landing image
+          for img in $(cat slides.md | grep 'background: ./assets/images/' | cut -d'/' -f 4); do
+            cp assets/images/$img dist/assets/images/
+          done
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
